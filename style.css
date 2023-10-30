@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Ubuntu&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 90%;
+    height: 52px;
+    padding: 2px 51px;
+}
+.navlist{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.navlist li{
+    padding: 9px 29px;
+    list-style: none;
+    
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.navlist li a:hover{
+    color: grey;
+}
+.rightnav{
+    width: 30%;
+    text-align: right;
+}
+
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+
+.background{
+    background: rgba(0, 0,0, 0.7) url('img/developerpage.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+    .firsthalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secondhalf img{
+    width: 70%;
+    border: 3px solid white;
+    display: block;
+    margin: auto;
+    border-radius: 85px;
+}
+
+.text-big{
+    font-size: 42px;
+}
+.text-small{
+    font-size: 17px;
+}
+.btn{
+    padding: 8px;
+    margin: 16px;
+    border: 2px solid white;
+    border-radius: 18px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 8px 14px;
+    border-radius: 14px;
+}
+
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sectiontag{
+    padding: 11px 0px;
+}
+.section-mid{
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    width: 350px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 56px;
+    margin-top: 105px;
+}
+.paras{
+    padding: 0 116px;
+}
+
+.contact{
+    background-color: beige;
+    height: 350px;
+    padding: 5%;
+}
+.text-center{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.form{
+    max-width: 400px;
+    margin: 16px auto;
+}
+.form input{
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin: 11px 0;
+    padding: 5px 8px;
+}
+.btn-su{
+    color: black;
+    padding: 9px 41px;
+    margin: 12px 264px;
+    border: 2px solid black;
+    border-radius: 11px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    color: white;
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 1140px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 400px;
+        transition: all .7s ease-in-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 65px;
+    }
+    .v-class{
+        opacity: .0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 1005;
+    }
+    .form{
+        max-width: 62%;
+    }
+    .firstSection{
+        height: 137vh;
+    }
+    .section{
+        flex-direction: column-reverse;
+        
+        
+    }
+    .button{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px 1px;
+    }
+    .contact{
+        padding: 5%;
+    }
+}
